@@ -1,0 +1,9 @@
+function trackImportedAmericanProducts(products) {
+  let importedAmericanProductCount = 0;
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].origin === "USA" && products[i].isImported === true) {
+      importedAmericanProductCount++;
+    }
+  }
+  return importedAmericanProductCount;
+}
